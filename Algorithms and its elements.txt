@@ -1,0 +1,26 @@
+var ls,nw,nv :'ineteger' ;
+var tab : array_of_caracter;
+
+Begin
+
+write("enter your phrase");
+
+while (tab[i]!='.') do
+  read (tab[i]);
+  i++;
+  ls++;
+end_while;
+
+for(i:=0; i<ls; i++) do{
+    if (tab[i]=' ')do
+    nw++;
+    else (tab[i]='a, e, i, o, u, y') do
+        nv++;
+    end_if
+}
+
+write("length of sentence is ",ls);
+write("number of words is ",nw);
+write("number of vowels is ",nv);  
+
+End;
